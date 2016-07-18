@@ -1,129 +1,175 @@
+<!DOCTYPE html>
 <html><head>
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head
-        content must come *after* these tags -->
-        <title>HTML CHEAT SHEET</title>
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <!-- En tete et titre du site -->
-    </head><body>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-1">CHEAT SHEET HTML</h1>
-                <p class="lead text-primary">Cette feuille de triche - ou le code HTML de référence rapide - répertorie
-                    les balises HTML communs et leurs attributs, regroupés en sections pertinentes
-                    dans un format facile à lire.</p>
-            </div>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- HEADER -->
+    <title>HTML CHEAT SHEET</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- En tete et titre du site -->
+  </head><body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-1">CHEAT SHEET HTML</h1>
+        <p class="lead text-primary">Cette feuille de triche - ou le code HTML de référence rapide - répertorie
+          les balises HTML communs et leurs attributs, regroupés en sections pertinentes
+          dans un format facile à lire.</p>
+      </div>
+    </div>
+    <!-- Image d''aceuille-->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <a href="#"><img src="img/13689871_1767078640244166_619412100_n.jpg" class="center-block img-responsive"></a>
+          </div>
         </div>
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <a href="#"><img src="img/13689871_1767078640244166_619412100_n.jpg" class="center-block img-responsive"></a>
-                    </div>
+        <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <form role="form">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Enter your email">
+                  <span class="input-group-btn">
+                    <a class="btn btn-success" type="submit">Go</a>
+                  </span>
                 </div>
-                <div class="row">
-                    <div class="col-md-offset-3 col-md-6">
-                        <form role="form">
-                            <div class="form-group">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Enter your email">
-                                    <span class="input-group-btn">
-                                        <a class="btn btn-success" type="submit">Go</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <!-- premier bouton -->
-        <button type="button" class="btn btn-primary btn-lg btn-block">Structure HTML de base</button>
-        <div class="card">
-            <img class="card-img-top">
-            <div class="card-block">
-                <h1 class="card-title">Structure HTML de base</h1>
-                <p class="lead text-primary">Les documents HTML doivent tous avoir une structure minimale. C'est-à-dire
-                    des balises qui sont toujours présentes et au milieu desquelles vous allez
-                    ajouter votre propre contenu. Ce chapitre présente cette structure en donnant
-                    quelques explications sur les mots-clefs principaux (aussi appelés balises).
-                    Voici un exemple de page minimale</p>
-                <!-- Bouton 2 -->
-                <a href="saw.png" class="btn btn-warning btn-lg btn-block">Base HTML</a>
-            </div>
+      </div>
+    </div>
+    <!-- premier bouton bleu + paragraphe -->
+    <button type="button" class="btn btn-primary btn-lg btn-block">Structure HTML de base</button>
+    <div class="card">
+      <img class="card-img-top">
+      <div class="card-block">
+        <h1 class="card-title">Structure HTML de base</h1>
+        <p class="lead text-primary">Les documents HTML doivent tous avoir une structure minimale. C'est-à-dire
+          des balises qui sont toujours présentes et au milieu desquelles vous allez
+          ajouter votre propre contenu. Ce chapitre présente cette structure en donnant
+          quelques explications sur les mots-clefs principaux (aussi appelés balises).
+          Voici un exemple de page minimale</p>
+        <!-- Bouton 2 orange -->
+        <a href="saw.png" class="btn btn-warning btn-lg btn-block">Base HTML</a>
+      </div>
+    </div>
+    <!-- Tableau  -->
+    <table class="table table-bordered table-condensed table-body-center">
+      <tbody>
+        <tr>
+          <th>Utilisation</th>
+          <th>Fragment de code</th>
+        </tr>
+        <tr>
+          <td>Un lien simple</td>
+          <td>&lt; a href="https://developer.mozilla.org"&gt;Un lien vers MDN &lt; /a&gt;</td>
+        </tr>
+        <tr>
+          <td class="success">Une image simple</td>
+          <td>&lt; img src="https://developer.mozilla.org/media/img/mdn-logo-sm.png"
+            /&gt;</td>
+        </tr>
+        <tr>
+          <td>Un texte avec emphase</td>
+          <td>&lt; em&gt;Je suis distingué &lt; / em&gt;</td>
+        </tr>
+        <tr>
+          <td class="info">Un texte marqué comme important</td>
+          <td>&lt; strong&gt;Je suis important &lt; /strong&gt;</td>
+        </tr>
+        <tr>
+          <td>Un texte mis en avant</td>
+          <td>&lt; mark&gt;Remarquez-moi &lt; /mark&gt;</td>
+        </tr>
+        <tr>
+          <td class="success">Barrer du texte qui n'est plus pertinent</td>
+          <td>&lt; s&gt;Je ne suis plus d'actualité ou plus pertinent &lt; /s&gt;</td>
+        </tr>
+        <tr>
+          <td>Souligner pour ajouter une annotation non-textuelle</td>
+          <td>Ceci est &lt; u&gt;mal orthographié&lt; /u&gt;</td>
+        </tr>
+        <tr>
+          <td class="danger">Du texte qui doit être affiché en indice</td>
+          <td>H&lt; sub&gt;2&lt; /sub&gt;O</td>
+        </tr>
+        <tr>
+          <td>Du texte qui doit être affiché en exposant</td>
+          <td>M&lt; sup&gt;me&lt; /sup&gt; de Bovary</td>
+        </tr>
+        <tr>
+          <td class="danger">Une citation dans le cours du texte</td>
+          <td>Il a dit : &lt; q&gt;Je suis ton père.&lt; /q&gt;</td>
+        </tr>
+        <tr>
+          <td>Un fichier audio intégré</td>
+          <td>&lt; audio controls src="https://mdn.mozillademos.org/files/2587/AudioTest%20%281%29.mp3"&gt;L'élément
+            &lt; code&gt;audio
+            <!-- code-->n'est pas supporté.&lt; /audio&gt;
+            <audio controls="" src="https://mdn.mozillademos.org/files/2587/AudioTest%20%281%29.mp3">L'élément
+              <code>audio</code>n'est pas supporté.</audio>
+          </td>
+        </tr>
+        <tr>
+          <td class="success">&lt; p &gt;</td>
+          <td>Defines a paragraph</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- fin du TAbleaux -->
+    <!-- jQuery (necessary for Bootstrap 's JavaScript plugins) -->
+    <!-- LISTE DE PHOTO   -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center text-primary">Exemple en image&nbsp;</h1>
+          </div>
         </div>
-        <table class="table table-bordered table-condensed table-body-center">
-            <tbody>
-                <tr>
-                    <th>Utilisation</th>
-                    <th>Fragment de code</th>
-                </tr>
-                <tr>
-                    <td>Un lien simple</td>
-                    <td>&lt; a href="https://developer.mozilla.org"&gt;Un lien vers MDN &lt; /a&gt;</td>
-                </tr>
-                <tr>
-                    <td class="success">Une image simple</td>
-                    <td>&lt; img src="https://developer.mozilla.org/media/img/mdn-logo-sm.png"
-                        /&gt;</td>
-                </tr>
-                <tr>
-                    <td>Un texte avec emphase</td>
-                    <td>&lt; em&gt;Je suis distingué &lt; / em&gt;</td>
-                </tr>
-                <tr>
-                    <td class="info">Un texte marqué comme important</td>
-                    <td>&lt; strong&gt;Je suis important &lt; /strong&gt;</td>
-                </tr>
-                <tr>
-                    <td>Un texte mis en avant</td>
-                    <td>&lt; mark&gt;Remarquez-moi &lt; /mark&gt;</td>
-                </tr>
-                <tr>
-                    <td class="success">Barrer du texte qui n'est plus pertinent</td>
-                    <td>&lt; s&gt;Je ne suis plus d'actualité ou plus pertinent &lt; /s&gt;</td>
-                </tr>
-                <tr>
-                    <td>Souligner pour ajouter une annotation non-textuelle</td>
-                    <td>Ceci est &lt; u&gt;mal orthographié&lt; /u&gt;</td>
-                </tr>
-                <tr>
-                    <td class="danger">Du texte qui doit être affiché en indice</td>
-                    <td>H&lt; sub&gt;2&lt; /sub&gt;O</td>
-                </tr>
-                <tr>
-                    <td>Du texte qui doit être affiché en exposant</td>
-                    <td>M&lt; sup&gt;me&lt; /sup&gt; de Bovary</td>
-                </tr>
-                <tr>
-                    <td class="danger">Une citation dans le cours du texte</td>
-                    <td>Il a dit : &lt; q&gt;Je suis ton père.&lt; /q&gt;</td>
-                </tr>
-                <tr>
-                    <td>Un fichier audio intégré</td>
-                    <td>&lt; audio controls src="https://mdn.mozillademos.org/files/2587/AudioTest%20%281%29.mp3"&gt;L'élément
-                        &lt; code&gt;audio
-                        <!-- code-->n'est pas supporté.&lt; /audio&gt;
-                        <audio controls="" src="https://mdn.mozillademos.org/files/2587/AudioTest%20%281%29.mp3">L'élément
-                            <code>audio</code>n'est pas supporté.</audio>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="success">&lt; p &gt;</td>
-                    <td>Defines a paragraph</td>
-                </tr>
-            </tbody>
-        </table>
-        <!-- TAbleaux -->
-        <!-- jQuery (necessary for Bootstrap 's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script><div class="section"> <div class="container"> <div class="row"> <div class="col-md-12"> <h1 class="text-center">Gallery</h1> </div></div><div class="row"> <div class="col-md-4"> <a><img src="img/13699358_1767078920244138_1594521014_o.jpg" class="img-responsive"></a> <h3>A title</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p></div><div class="col-md-4"> <a><img src="img/13709566_1767077060244324_1301860349_o.jpg" class="img-responsive"></a> <h2>A title</h2> <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p></div><div class="col-md-4"> <a><img src="img/13711441_1767070166911680_405482707_o.jpg" class="img-responsive"></a> <h2>A ttile</h2> <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p></div></div><div class="row"> <div class="col-md-4"> <a><img src="img/13714545_1767076746911022_394435849_n.jpg" class="img-responsive"></a> <h3>A title</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p></div><div class="col-md-4"> <a><img src="../../Téléchargements/13699358_1767078920244138_1594521014_o.jpg" class="img-responsive"></a> <h3>A title</h3> <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p></div><div class="col-md-4"> <a><img src="../../Téléchargements/13706364_1767087013576662_480755517_n.png" class="img-responsive"></a> <h2>A title</h2> <p>Lorem ipsum dolor sit amet, consectetur adipisici elit,&nbsp;</p></div></div></div></div>
-        
-        <!-- Include all compiled plugins (below), or include individual files
-        as needed -->
-    
+        <div class="row">
+          <div class="col-md-4">
+            <a><img src="img/13699358_1767078920244138_1594521014_o.jpg" class="img-responsive"></a>
+            <h3 class="text-info">&lt;title&gt; &lt;/tittle titre de l'entéte du site</h3>
+          </div>
+          <div class="col-md-4">
+            <a><img src="img/13709566_1767077060244324_1301860349_o.jpg" class="img-responsive"></a>
+            <h2 class="text-danger">&lt;link href="style.css"&gt; activer feuille CSS&nbsp;</h2>
+          </div>
+          <div class="col-md-4">
+            <a><img src="img/13711441_1767070166911680_405482707_o.jpg" class="img-responsive"></a>
+            <h2 class="text-warning">&lt;p&gt; paragraphe&lt;/p&gt;</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a><img src="img/13714545_1767076746911022_394435849_n.jpg" class="img-responsive"></a>
+            <h1 contenteditable="true">Faire un titre&nbsp;</h1>
+          </div>
+          <div class="col-md-4">
+            <a><img src="img/13735433_1767083576910339_1648313045_n.png.jpeg" class="img-responsive"></a>
+            <h1 contenteditable="true">&lt;strong&gt;Gras&lt;/strong&gt;</h1>
+            <p></p>
+          </div>
+          <div class="col-md-4">
+            <a><img src="img/structure-html5-b4386.png" class="img-responsive"></a>
+            <h1 contenteditable="true" class="text-success">Structure d'une page html</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fin de la liste  -->
+
+    <!-- Include all compiled plugins (below), or include individual files
+    as needed -->
+
 
 </body></html>
